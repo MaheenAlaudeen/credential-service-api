@@ -1,0 +1,11 @@
+{
+  "messageProperties": {
+    "timestamp": "2017-05-11T15:35:43.856+0000",
+    "correlationId": "test-positivePublicKey1",
+    "replyTo": "yedalj.corp.emc.com"
+  },
+  "encryptionParameters": {
+    "algorithm": "RSA",
+    "publicKeyString": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAieoqunp/vcEc1RfpJposIA3K7uqCDGghSM2uym2UxEAk1FtBmaAMz246JqFj4Sfkd24+kltEL0Drv9KOJISa2QNyUDObOqxWZhf0tOd9u1hp0bzU16lKezn6yqaaStAJ87Ho+GKUoyoI7Deg1rMcKgiIxrgjcgrkIuJxClFNpyLgaNFcIbFARENZ28lrvltmOeTxlAZV8lvOhG5cC4N3qDGRIkVmo2H5wNlTFdo3tUPDu5g26tTd4MnsM0f78UmnTli3vYUx8wTMaudDVlDa4yxR0sRpNZXAmndIUMdwub1ULq7VjY8V02/ZHAOTPBzPp65oaeo5/CNFngpPK8Y+lQIDAQAB"
+  }
+}

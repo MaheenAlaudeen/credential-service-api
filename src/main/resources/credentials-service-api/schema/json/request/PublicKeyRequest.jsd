@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "PublicKey",
+  "description": "Resquest for Credential Public Key",
+  "_meta": {
+    "message": "com.dell.cpsd.credential.model.api.request.PublicKeyRequest",
+    "version": "1.0"
+  },
+  "properties": {
+     "messageProperties": {
+           "$ref": "../MessageProperties.jsd"
+     }
+  },
+  "required": [
+    "timestamp",
+    "correlationId",
+    "replyTo"
+  ]
+}

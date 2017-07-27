@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "PublicKeyResponse",
+  "description": "Response with credential service public Key",
+  "_meta": {
+    "message": "com.dell.cpsd.credential.model.api.response.PublicKeyResponse",
+    "version": "1.0"
+  },
+  "properties": {
+     "messageProperties": {
+        "$ref": "../MessageProperties.jsd"
+     },
+    "encryptionParameters": {
+      "$ref": "../EncryptionParameter.jsd"
+    }
+  },
+  "required": [
+    "timestamp",
+    "correlationId",
+    "encryptionParameters"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Encryption Parameter",
+  "description": "Properties that holds details to encrpt a String",
+  "_meta": {
+    "message": "com.dell.cpsd.credential.model.api.EncryptionParameter",
+    "version": "1.0"
+  },
+  "properties": {
+    "algorithm": {
+      "type": "string",
+      "description": "This is the algorithm that needs to be used for generating the Key Factory instance",
+      "enum": [
+        "RSA",
+        "DSA"
+      ]
+    },
+    "publicKeyString": {
+      "type": "string",
+      "description": "This is the ASN.1 encoded public key string"
+    }
+  },
+  "required": [
+    "algorithm",
+    "publicKeyString"
+  ]
+}

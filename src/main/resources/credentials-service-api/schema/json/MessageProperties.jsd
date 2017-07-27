@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Message Properties",
+  "description": "Message header Properties",
+  "_meta": {
+    "message": "com.dell.cpsd.credential.model.api.MessageProperties",
+    "version": "1.0"
+  },
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "javaType": "java.util.Date",
+      "title": "Message timestamp",
+      "description": "Message creation timestamp."
+    },
+    "correlationId": {
+      "type": "string",
+      "title": "Correlation ID",
+      "description": "Messages chain reference."
+    },
+    "replyTo": {
+      "type": "string",
+      "title": "Reply-to identifier.",
+      "description": "Reply-to identifier. Default format is: '<sender-name>.<sender-host>'"
+    }
+  },
+  "required": [
+    "timestamp",
+    "correlationId"
+  ]
+}
