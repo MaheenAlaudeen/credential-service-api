@@ -8,6 +8,9 @@ package com.dell.cpsd.service.rcm;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import static com.dell.cpsd.common.json.utils.JsonSchemaValidation.validateSchema;
+import static org.junit.Assert.assertNull;
+
 /**
  * Validate if example files are correct.<br/>
  * Test goal in &lt;packaging&gt;pom&lt;/packaging&gt; is not triggered automatically,
@@ -22,41 +25,43 @@ import org.junit.Test;
  */
 public class ValidateExamplesTest
 {
-    public static final String SCHEMA_DIR  = "/credential-service-api/schema/json/";
-    public static final String EXAMPLE_DIR = "/credential-service-api/schema/example/json/";
+    public static final String SCHEMA_DIR  = "/credentials-service-api/schema/json/";
+    public static final String EXAMPLE_DIR = "/credentials-service-api/schema/example/json/";
+    public static final String INCLUDES_DIR = SCHEMA_DIR + "includes";
     public static final String REQUEST     = "request";
     public static final String RESPONSE    = "response";
     public static final String ERROR       = "error";
 
     @Test
-    @Ignore
     public void componentCredentialsWriteRequest() throws Exception
     {
         String messageName = "/ComponentCredentialsWriteRequest";
-        JsonSchemaUtil.validateSchema(SCHEMA_DIR + REQUEST + messageName + ".jsd", EXAMPLE_DIR + REQUEST + messageName + ".json");
+        String errors = validateSchema(SCHEMA_DIR + REQUEST + messageName + ".jsd", EXAMPLE_DIR + REQUEST + messageName + ".json", INCLUDES_DIR);
+        assertNull(errors, errors);
     }
 
     @Test
-    @Ignore
     public void componentCredentialsReadRequest() throws Exception
     {
         String messageName = "/ComponentCredentialsReadRequest";
-        JsonSchemaUtil.validateSchema(SCHEMA_DIR + REQUEST + messageName + ".jsd", EXAMPLE_DIR + REQUEST + messageName + ".json");
+        String errors = validateSchema(SCHEMA_DIR + REQUEST + messageName + ".jsd", EXAMPLE_DIR + REQUEST + messageName + ".json", INCLUDES_DIR);
+        assertNull(errors, errors);
     }
 
     @Test
     public void componentCredentialsResponse() throws Exception
     {
         String messageName = "/ComponentCredentialsResponse";
-        JsonSchemaUtil.validateSchema(SCHEMA_DIR + RESPONSE + messageName + ".jsd", EXAMPLE_DIR + RESPONSE + messageName + ".json");
+        String errors = validateSchema(SCHEMA_DIR + RESPONSE + messageName + ".jsd", EXAMPLE_DIR + RESPONSE + messageName + ".json", INCLUDES_DIR);
+        assertNull(errors, errors);
     }
 
     @Test
-    @Ignore
     public void errorMessage() throws Exception
     {
         String messageName = "/CredentialServiceErrorMessage";
-        JsonSchemaUtil.validateSchema(SCHEMA_DIR + ERROR + messageName + ".jsd", EXAMPLE_DIR + messageName + ".json");
+        String errors = validateSchema(SCHEMA_DIR + ERROR + messageName + ".jsd", EXAMPLE_DIR + ERROR + messageName + ".json", INCLUDES_DIR);
+        assertNull(errors, errors);
     }
 
 }
