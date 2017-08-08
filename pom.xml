@@ -92,7 +92,7 @@
         <dependency>
             <groupId>com.dell.cpsd.common.messaging</groupId>
             <artifactId>common-testing</artifactId>
-            <version>1.4-SNAPSHOT</version>
+            <version>1.5.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
