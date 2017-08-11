@@ -11,16 +11,15 @@
             <directory>src/main/resources/credential-service-api/schema/example</directory>
         </fileSet>
         <fileSet>
-            <outputDirectory>credential-service-api/schema/json</outputDirectory>
-            <directory>src/main/resources/credential-service-api/schema/json</directory>
-        </fileSet>
-        <fileSet>
-            <outputDirectory>credentials-service-api/schema/example</outputDirectory>
-            <directory>src/main/resources/credentials-service-api/schema/example</directory>
-        </fileSet>
-        <fileSet>
             <outputDirectory>credentials-service-api/schema/json</outputDirectory>
             <directory>src/main/resources/credentials-service-api/schema/json</directory>
+        </fileSet>
+        <fileSet>
+            <outputDirectory>credentials-service-api</outputDirectory>
+            <directory>${project.basedir}/</directory>
+            <includes>
+                <include>LICENSE.md</include>
+            </includes>
         </fileSet>
     </fileSets>
 </assembly>
