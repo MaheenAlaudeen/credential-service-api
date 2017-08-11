@@ -4,7 +4,7 @@ UPSTREAM_TRIGGERS = getUpstreamTriggers([
 
 pipeline {    
     triggers {
-        upstream(upstreamProjects: UPSTREAM_TRIGGERS, threshold: hudson.model.Result.SUCCESS)
+         upstream(upstreamProjects: UPSTREAM_TRIGGERS, threshold: hudson.model.Result.SUCCESS)
     }
     agent {
         node {
