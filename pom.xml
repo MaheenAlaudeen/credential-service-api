@@ -23,12 +23,12 @@
         <java-version>1.8</java-version>
         <common-dependencies.version>1.2.0</common-dependencies.version>
         <maven-jar-plugin.version>3.0.2</maven-jar-plugin.version>
-        <common-testing.version>1.5.0</common-testing.version>
+        <common-testing.version>2.0.0-SNAPSHOT</common-testing.version>
         <maven-dependency-plugin.version>3.0.1</maven-dependency-plugin.version>
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
-        <common-rabbitmq.version>1.5.0</common-rabbitmq.version>
+        <common-rabbitmq.version>2.0.0-SNAPSHOT</common-rabbitmq.version>
         <jsonschema2pojo-maven-plugin.version>0.4.27</jsonschema2pojo-maven-plugin.version>
-        <common-contract-enricher.version>1.5.0</common-contract-enricher.version>
+        <common-contract-enricher.version>2.0.0-SNAPSHOT</common-contract-enricher.version>
     </properties>
 
     <licenses>
@@ -97,14 +97,14 @@
         </dependency>
 
         <dependency>
-            <groupId>com.dell.cpsd.common.messaging</groupId>
+            <groupId>com.dell.cpsd</groupId>
             <artifactId>common-testing</artifactId>
             <version>${common-testing.version}</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>com.dell.cpsd.common.messaging</groupId>
+            <groupId>com.dell.cpsd</groupId>
             <artifactId>common-rabbitmq</artifactId>
             <version>${common-rabbitmq.version}</version>
         </dependency>
@@ -155,7 +155,7 @@
                 <version>${jsonschema2pojo-maven-plugin.version}</version>
                 <dependencies>
                     <dependency>
-                        <groupId>com.dell.cpsd.common.messaging</groupId>
+                        <groupId>com.dell.cpsd</groupId>
                         <artifactId>common-contract-enricher</artifactId>
                         <version>${common-contract-enricher.version}</version>
                     </dependency>
