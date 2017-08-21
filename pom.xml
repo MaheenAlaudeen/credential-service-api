@@ -23,12 +23,12 @@
         <java-version>1.8</java-version>
         <common-dependencies.version>1.2.0</common-dependencies.version>
         <maven-jar-plugin.version>3.0.2</maven-jar-plugin.version>
-        <common-testing.version>2.0.0-SNAPSHOT</common-testing.version>
+        <common-testing.version>2.0.0</common-testing.version>
         <maven-dependency-plugin.version>3.0.1</maven-dependency-plugin.version>
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
-        <common-rabbitmq.version>2.0.0-SNAPSHOT</common-rabbitmq.version>
+        <common-rabbitmq.version>2.0.0</common-rabbitmq.version>
         <jsonschema2pojo-maven-plugin.version>0.4.27</jsonschema2pojo-maven-plugin.version>
-        <common-contract-enricher.version>2.0.0-SNAPSHOT</common-contract-enricher.version>
+        <common-contract-enricher.version>2.0.0</common-contract-enricher.version>
     </properties>
 
     <licenses>
