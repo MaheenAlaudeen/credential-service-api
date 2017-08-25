@@ -6,12 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-### Added
-
 ### Changed
- - Update GroupID identifier for common-messaging-parent.
-
-### Removed
+ - The GroupID identifier for common-messaging-parent.
 
 ## 1.3.0 - 2017-08-11
 
