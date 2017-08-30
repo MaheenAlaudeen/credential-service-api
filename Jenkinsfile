@@ -46,6 +46,11 @@ pipeline {
                 sh "mvn verify -Dmaven.repo.local=.repo"
             }
         }
+        stage('PasswordScan') {
+            steps {
+                doPwScan()
+            }
+        }
         stage('Deploy') {
              steps {
                  script {
@@ -78,11 +83,6 @@ pipeline {
             steps {
                 sh 'rm -rf .repo'
                 doNexbScanning()
-            }
-        }
-        stage('PasswordScan') {
-            steps {
-                doPwScan()
             }
         }
     }
