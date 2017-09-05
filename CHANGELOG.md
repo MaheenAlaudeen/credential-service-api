@@ -6,7 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-## [1.3.1] - 2017-08-30
+## [1.3.2] - 2017-09-05
+
+### Changed
+ - JSD file structure for schemas.
+
+## 1.3.1 - 2017-08-30
 
 ### Added
  - Missing schema for credential-service-api.
@@ -19,6 +24,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
  - Release of the initial credential-service-api binary files.
 
-[Unreleased]: https://github.com/dellemc-symphony/credential-service-api/compare/1.3.1...HEAD
-[1.3.1]: https://github.com/dellemc-symphony/credential-service-api/compare/1.3.0...1.3.1
-
+[Unreleased]: https://github.com/dellemc-symphony/credential-service-api/compare/1.3.2...HEAD
+[1.3.2]: https://github.com/dellemc-symphony/credential-service-api/compare/1.3.1...1.3.2
