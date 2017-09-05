@@ -27,7 +27,7 @@ public class ValidateExamplesTest
 {
     public static final String SCHEMA_DIR  = "/credentials-service-api/schema/json/";
     public static final String EXAMPLE_DIR = "/credentials-service-api/schema/example/json/";
-    public static final String INCLUDES_DIR = SCHEMA_DIR + "includes";
+    public static final String INCLUDES_DIR = SCHEMA_DIR;
     public static final String REQUEST     = "request";
     public static final String RESPONSE    = "response";
     public static final String ERROR       = "error";
